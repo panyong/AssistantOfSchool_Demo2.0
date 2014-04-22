@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface AOSAppDelegate : UIResponder <UIApplicationDelegate>
-
+@property BOOL flag;
 @property (strong, nonatomic) UIWindow *window;
 
 @end

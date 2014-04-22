@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C0529C318F162A90065CB4F /* CourseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0529C118F162A90065CB4F /* CourseViewController.m */; };
+		0C0529C418F162A90065CB4F /* CourseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C0529C218F162A90065CB4F /* CourseViewController.xib */; };
+		0C0A0DD118FEA1D9001DBB8B /* MyDataPickerForMajorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0A0DCF18FEA1D9001DBB8B /* MyDataPickerForMajorViewController.m */; };
+		0C0A0DD218FEA1D9001DBB8B /* MyDataPickerForMajorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C0A0DD018FEA1D9001DBB8B /* MyDataPickerForMajorViewController.xib */; };
+		0C124B5018F291700021FC92 /* DetailCourseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C124B4E18F291700021FC92 /* DetailCourseViewController.m */; };
+		0C124B5118F291700021FC92 /* DetailCourseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C124B4F18F291700021FC92 /* DetailCourseViewController.xib */; };
+		0C124B5518F2AEC90021FC92 /* CourseDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C124B5418F2AEC90021FC92 /* CourseDao.m */; };
+		0C12770918F1400B005BE09A /* DatabseDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C12770818F1400B005BE09A /* DatabseDao.m */; };
+		0C1390B418F2F6A700685603 /* AddCourseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C1390B218F2F6A700685603 /* AddCourseViewController.m */; };
+		0C1390B518F2F6A700685603 /* AddCourseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C1390B318F2F6A700685603 /* AddCourseViewController.xib */; };
+		0C1390B918F2FD7400685603 /* MyDataPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C1390B718F2FD7400685603 /* MyDataPicker.m */; };
+		0C1390BA18F2FD7400685603 /* MyDataPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C1390B818F2FD7400685603 /* MyDataPicker.xib */; };
+		0C17B8CC18F42942004A4849 /* MyDataPickerForWeek.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C17B8CA18F42942004A4849 /* MyDataPickerForWeek.m */; };
+		0C17B8CD18F42942004A4849 /* MyDataPickerForWeek.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C17B8CB18F42942004A4849 /* MyDataPickerForWeek.xib */; };
+		0CE4F4B518FEBD1B00D5D413 /* WeekCountAndSemester.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CE4F4B318FEBD1B00D5D413 /* WeekCountAndSemester.m */; };
+		0CE4F4B618FEBD1B00D5D413 /* WeekCountAndSemester.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CE4F4B418FEBD1B00D5D413 /* WeekCountAndSemester.xib */; };
 		0CF502BD18EED6E100261E7C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF502BC18EED6E100261E7C /* Foundation.framework */; };
 		0CF502BF18EED6E100261E7C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF502BE18EED6E100261E7C /* CoreGraphics.framework */; };
 		0CF502C118EED6E200261E7C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF502C018EED6E100261E7C /* UIKit.framework */; };
@@ -19,6 +35,16 @@
 		0CF502D818EED6E200261E7C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF502C018EED6E100261E7C /* UIKit.framework */; };
 		0CF502E018EED6E200261E7C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0CF502DE18EED6E200261E7C /* InfoPlist.strings */; };
 		0CF502E218EED6E200261E7C /* AssistantOfSchool_Demo1_0Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CF502E118EED6E200261E7C /* AssistantOfSchool_Demo1_0Tests.m */; };
+		0CF502EE18EED73800261E7C /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CF502EC18EED73800261E7C /* LoginViewController.m */; };
+		0CF502EF18EED73800261E7C /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CF502ED18EED73800261E7C /* LoginViewController.xib */; };
+		0CF502F318EEDABD00261E7C /* SigninViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CF502F118EEDABD00261E7C /* SigninViewController.m */; };
+		0CF502F418EEDABD00261E7C /* SigninViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CF502F218EEDABD00261E7C /* SigninViewController.xib */; };
+		0CF502F918EEE60B00261E7C /* CourseInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CF502F818EEE60B00261E7C /* CourseInfo.m */; };
+		0CF502FC18EEE62A00261E7C /* StudentInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CF502FB18EEE62A00261E7C /* StudentInfo.m */; };
+		0CF502FF18EEE68F00261E7C /* StuCourInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CF502FE18EEE68F00261E7C /* StuCourInfo.m */; };
+		0CF5030518EF088200261E7C /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF5030418EF088200261E7C /* libsqlite3.0.dylib */; };
+		0CFFDEF81903980D00EDCD27 /* MyDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CFFDEF61903980D00EDCD27 /* MyDatePicker.m */; };
+		0CFFDEF91903980D00EDCD27 /* MyDatePicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CFFDEF71903980D00EDCD27 /* MyDatePicker.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +58,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C0529C018F162A90065CB4F /* CourseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseViewController.h; sourceTree = "<group>"; };
+		0C0529C118F162A90065CB4F /* CourseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseViewController.m; sourceTree = "<group>"; };
+		0C0529C218F162A90065CB4F /* CourseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CourseViewController.xib; sourceTree = "<group>"; };
+		0C0A0DCE18FEA1D9001DBB8B /* MyDataPickerForMajorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyDataPickerForMajorViewController.h; sourceTree = "<group>"; };
+		0C0A0DCF18FEA1D9001DBB8B /* MyDataPickerForMajorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyDataPickerForMajorViewController.m; sourceTree = "<group>"; };
+		0C0A0DD018FEA1D9001DBB8B /* MyDataPickerForMajorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyDataPickerForMajorViewController.xib; sourceTree = "<group>"; };
+		0C124B4D18F291700021FC92 /* DetailCourseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailCourseViewController.h; sourceTree = "<group>"; };
+		0C124B4E18F291700021FC92 /* DetailCourseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailCourseViewController.m; sourceTree = "<group>"; };
+		0C124B4F18F291700021FC92 /* DetailCourseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailCourseViewController.xib; sourceTree = "<group>"; };
+		0C124B5318F2AEC90021FC92 /* CourseDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseDao.h; sourceTree = "<group>"; };
+		0C124B5418F2AEC90021FC92 /* CourseDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseDao.m; sourceTree = "<group>"; };
+		0C12770718F1400B005BE09A /* DatabseDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabseDao.h; sourceTree = "<group>"; };
+		0C12770818F1400B005BE09A /* DatabseDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabseDao.m; sourceTree = "<group>"; };
+		0C1390B118F2F6A700685603 /* AddCourseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCourseViewController.h; sourceTree = "<group>"; };
+		0C1390B218F2F6A700685603 /* AddCourseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCourseViewController.m; sourceTree = "<group>"; };
+		0C1390B318F2F6A700685603 /* AddCourseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddCourseViewController.xib; sourceTree = "<group>"; };
+		0C1390B618F2FD7400685603 /* MyDataPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyDataPicker.h; sourceTree = "<group>"; };
+		0C1390B718F2FD7400685603 /* MyDataPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyDataPicker.m; sourceTree = "<group>"; };
+		0C1390B818F2FD7400685603 /* MyDataPicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyDataPicker.xib; sourceTree = "<group>"; };
+		0C17B8C918F42942004A4849 /* MyDataPickerForWeek.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyDataPickerForWeek.h; sourceTree = "<group>"; };
+		0C17B8CA18F42942004A4849 /* MyDataPickerForWeek.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyDataPickerForWeek.m; sourceTree = "<group>"; };
+		0C17B8CB18F42942004A4849 /* MyDataPickerForWeek.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyDataPickerForWeek.xib; sourceTree = "<group>"; };
+		0CE4F4B218FEBD1B00D5D413 /* WeekCountAndSemester.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeekCountAndSemester.h; sourceTree = "<group>"; };
+		0CE4F4B318FEBD1B00D5D413 /* WeekCountAndSemester.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeekCountAndSemester.m; sourceTree = "<group>"; };
+		0CE4F4B418FEBD1B00D5D413 /* WeekCountAndSemester.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeekCountAndSemester.xib; sourceTree = "<group>"; };
 		0CF502B918EED6E100261E7C /* AssistantOfSchool_Demo1.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AssistantOfSchool_Demo1.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CF502BC18EED6E100261E7C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0CF502BE18EED6E100261E7C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,6 +99,22 @@
 		0CF502DD18EED6E200261E7C /* AssistantOfSchool_Demo1.0Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AssistantOfSchool_Demo1.0Tests-Info.plist"; sourceTree = "<group>"; };
 		0CF502DF18EED6E200261E7C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0CF502E118EED6E200261E7C /* AssistantOfSchool_Demo1_0Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AssistantOfSchool_Demo1_0Tests.m; sourceTree = "<group>"; };
+		0CF502EB18EED73800261E7C /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		0CF502EC18EED73800261E7C /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		0CF502ED18EED73800261E7C /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		0CF502F018EEDABD00261E7C /* SigninViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SigninViewController.h; sourceTree = "<group>"; };
+		0CF502F118EEDABD00261E7C /* SigninViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SigninViewController.m; sourceTree = "<group>"; };
+		0CF502F218EEDABD00261E7C /* SigninViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SigninViewController.xib; sourceTree = "<group>"; };
+		0CF502F718EEE60B00261E7C /* CourseInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseInfo.h; sourceTree = "<group>"; };
+		0CF502F818EEE60B00261E7C /* CourseInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseInfo.m; sourceTree = "<group>"; };
+		0CF502FA18EEE62A00261E7C /* StudentInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentInfo.h; sourceTree = "<group>"; };
+		0CF502FB18EEE62A00261E7C /* StudentInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentInfo.m; sourceTree = "<group>"; };
+		0CF502FD18EEE68F00261E7C /* StuCourInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StuCourInfo.h; sourceTree = "<group>"; };
+		0CF502FE18EEE68F00261E7C /* StuCourInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StuCourInfo.m; sourceTree = "<group>"; };
+		0CF5030418EF088200261E7C /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		0CFFDEF51903980D00EDCD27 /* MyDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyDatePicker.h; sourceTree = "<group>"; };
+		0CFFDEF61903980D00EDCD27 /* MyDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyDatePicker.m; sourceTree = "<group>"; };
+		0CFFDEF71903980D00EDCD27 /* MyDatePicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyDatePicker.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CF5030518EF088200261E7C /* libsqlite3.0.dylib in Frameworks */,
 				0CF502BF18EED6E100261E7C /* CoreGraphics.framework in Frameworks */,
 				0CF502C118EED6E200261E7C /* UIKit.framework in Frameworks */,
 				0CF502BD18EED6E100261E7C /* Foundation.framework in Frameworks */,
@@ -74,6 +142,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C124B4C18F290E80021FC92 /* DetailCourseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0C124B4D18F291700021FC92 /* DetailCourseViewController.h */,
+				0C124B4E18F291700021FC92 /* DetailCourseViewController.m */,
+				0C124B4F18F291700021FC92 /* DetailCourseViewController.xib */,
+			);
+			name = DetailCourseViewController;
+			sourceTree = "<group>";
+		};
+		0C124B5218F2AE940021FC92 /* EntityDao */ = {
+			isa = PBXGroup;
+			children = (
+				0C124B5318F2AEC90021FC92 /* CourseDao.h */,
+				0C124B5418F2AEC90021FC92 /* CourseDao.m */,
+			);
+			name = EntityDao;
+			sourceTree = "<group>";
+		};
+		0C12770618F13FC4005BE09A /* DatabaseDao */ = {
+			isa = PBXGroup;
+			children = (
+				0C12770718F1400B005BE09A /* DatabseDao.h */,
+				0C12770818F1400B005BE09A /* DatabseDao.m */,
+			);
+			name = DatabaseDao;
+			sourceTree = "<group>";
+		};
+		0C17B8C818F42909004A4849 /* MyDataPickerViews */ = {
+			isa = PBXGroup;
+			children = (
+				0C1390B618F2FD7400685603 /* MyDataPicker.h */,
+				0C1390B718F2FD7400685603 /* MyDataPicker.m */,
+				0C1390B818F2FD7400685603 /* MyDataPicker.xib */,
+				0C17B8C918F42942004A4849 /* MyDataPickerForWeek.h */,
+				0C17B8CA18F42942004A4849 /* MyDataPickerForWeek.m */,
+				0C17B8CB18F42942004A4849 /* MyDataPickerForWeek.xib */,
+				0C0A0DCE18FEA1D9001DBB8B /* MyDataPickerForMajorViewController.h */,
+				0C0A0DCF18FEA1D9001DBB8B /* MyDataPickerForMajorViewController.m */,
+				0C0A0DD018FEA1D9001DBB8B /* MyDataPickerForMajorViewController.xib */,
+				0CE4F4B218FEBD1B00D5D413 /* WeekCountAndSemester.h */,
+				0CE4F4B318FEBD1B00D5D413 /* WeekCountAndSemester.m */,
+				0CE4F4B418FEBD1B00D5D413 /* WeekCountAndSemester.xib */,
+				0CFFDEF51903980D00EDCD27 /* MyDatePicker.h */,
+				0CFFDEF61903980D00EDCD27 /* MyDatePicker.m */,
+				0CFFDEF71903980D00EDCD27 /* MyDatePicker.xib */,
+			);
+			name = MyDataPickerViews;
+			sourceTree = "<group>";
+		};
 		0CF502B018EED6E100261E7C = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +225,13 @@
 		0CF502C218EED6E200261E7C /* AssistantOfSchool_Demo1.0 */ = {
 			isa = PBXGroup;
 			children = (
+				0C17B8C818F42909004A4849 /* MyDataPickerViews */,
+				0C124B5218F2AE940021FC92 /* EntityDao */,
+				0C124B4C18F290E80021FC92 /* DetailCourseViewController */,
+				0C12770618F13FC4005BE09A /* DatabaseDao */,
+				0CF5030318EEF10E00261E7C /* CourseView */,
+				0CF502F618EEE48C00261E7C /* Entity */,
+				0CF502F518EEDAF000261E7C /* LoginAndSignin */,
 				0CF502CB18EED6E200261E7C /* AOSAppDelegate.h */,
 				0CF502CC18EED6E200261E7C /* AOSAppDelegate.m */,
 				0CF502CE18EED6E200261E7C /* Images.xcassets */,
@@ -118,6 +243,7 @@
 		0CF502C318EED6E200261E7C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0CF5030418EF088200261E7C /* libsqlite3.0.dylib */,
 				0CF502C418EED6E200261E7C /* AssistantOfSchool_Demo1.0-Info.plist */,
 				0CF502C518EED6E200261E7C /* InfoPlist.strings */,
 				0CF502C818EED6E200261E7C /* main.m */,
@@ -142,6 +268,45 @@
 				0CF502DE18EED6E200261E7C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0CF502F518EEDAF000261E7C /* LoginAndSignin */ = {
+			isa = PBXGroup;
+			children = (
+				0CF502F018EEDABD00261E7C /* SigninViewController.h */,
+				0CF502F118EEDABD00261E7C /* SigninViewController.m */,
+				0CF502F218EEDABD00261E7C /* SigninViewController.xib */,
+				0CF502EB18EED73800261E7C /* LoginViewController.h */,
+				0CF502EC18EED73800261E7C /* LoginViewController.m */,
+				0CF502ED18EED73800261E7C /* LoginViewController.xib */,
+			);
+			name = LoginAndSignin;
+			sourceTree = "<group>";
+		};
+		0CF502F618EEE48C00261E7C /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				0CF502F718EEE60B00261E7C /* CourseInfo.h */,
+				0CF502F818EEE60B00261E7C /* CourseInfo.m */,
+				0CF502FA18EEE62A00261E7C /* StudentInfo.h */,
+				0CF502FB18EEE62A00261E7C /* StudentInfo.m */,
+				0CF502FD18EEE68F00261E7C /* StuCourInfo.h */,
+				0CF502FE18EEE68F00261E7C /* StuCourInfo.m */,
+			);
+			name = Entity;
+			sourceTree = "<group>";
+		};
+		0CF5030318EEF10E00261E7C /* CourseView */ = {
+			isa = PBXGroup;
+			children = (
+				0C0529C018F162A90065CB4F /* CourseViewController.h */,
+				0C0529C118F162A90065CB4F /* CourseViewController.m */,
+				0C0529C218F162A90065CB4F /* CourseViewController.xib */,
+				0C1390B118F2F6A700685603 /* AddCourseViewController.h */,
+				0C1390B218F2F6A700685603 /* AddCourseViewController.m */,
+				0C1390B318F2F6A700685603 /* AddCourseViewController.xib */,
+			);
+			name = CourseView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,8 +385,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C0A0DD218FEA1D9001DBB8B /* MyDataPickerForMajorViewController.xib in Resources */,
+				0CF502F418EEDABD00261E7C /* SigninViewController.xib in Resources */,
+				0C0529C418F162A90065CB4F /* CourseViewController.xib in Resources */,
+				0C124B5118F291700021FC92 /* DetailCourseViewController.xib in Resources */,
 				0CF502C718EED6E200261E7C /* InfoPlist.strings in Resources */,
 				0CF502CF18EED6E200261E7C /* Images.xcassets in Resources */,
+				0CF502EF18EED73800261E7C /* LoginViewController.xib in Resources */,
+				0CFFDEF91903980D00EDCD27 /* MyDatePicker.xib in Resources */,
+				0CE4F4B618FEBD1B00D5D413 /* WeekCountAndSemester.xib in Resources */,
+				0C1390B518F2F6A700685603 /* AddCourseViewController.xib in Resources */,
+				0C1390BA18F2FD7400685603 /* MyDataPicker.xib in Resources */,
+				0C17B8CD18F42942004A4849 /* MyDataPickerForWeek.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,8 +415,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C124B5018F291700021FC92 /* DetailCourseViewController.m in Sources */,
+				0CE4F4B518FEBD1B00D5D413 /* WeekCountAndSemester.m in Sources */,
+				0CF502F318EEDABD00261E7C /* SigninViewController.m in Sources */,
+				0CF502FC18EEE62A00261E7C /* StudentInfo.m in Sources */,
+				0CFFDEF81903980D00EDCD27 /* MyDatePicker.m in Sources */,
+				0CF502FF18EEE68F00261E7C /* StuCourInfo.m in Sources */,
+				0C0A0DD118FEA1D9001DBB8B /* MyDataPickerForMajorViewController.m in Sources */,
+				0C0529C318F162A90065CB4F /* CourseViewController.m in Sources */,
 				0CF502CD18EED6E200261E7C /* AOSAppDelegate.m in Sources */,
 				0CF502C918EED6E200261E7C /* main.m in Sources */,
+				0C17B8CC18F42942004A4849 /* MyDataPickerForWeek.m in Sources */,
+				0C124B5518F2AEC90021FC92 /* CourseDao.m in Sources */,
+				0CF502EE18EED73800261E7C /* LoginViewController.m in Sources */,
+				0C1390B918F2FD7400685603 /* MyDataPicker.m in Sources */,
+				0C1390B418F2F6A700685603 /* AddCourseViewController.m in Sources */,
+				0C12770918F1400B005BE09A /* DatabseDao.m in Sources */,
+				0CF502F918EEE60B00261E7C /* CourseInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +628,7 @@
 				0CF502E718EED6E200261E7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0CF502E818EED6E200261E7C /* Build configuration list for PBXNativeTarget "AssistantOfSchool_Demo1.0Tests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +637,7 @@
 				0CF502EA18EED6E200261E7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

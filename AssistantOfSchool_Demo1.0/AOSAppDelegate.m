@@ -7,14 +7,30 @@
 //
 
 #import "AOSAppDelegate.h"
-
-@implementation AOSAppDelegate
+#import "CourseViewController.h"
+#import "LoginViewController.h"
+@implementation AOSAppDelegate{
+    BOOL flag;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    if (!flag) {
+        flag = YES;
+        LoginViewController *loginVC = [[LoginViewController alloc] initWithNibName:@"LoginViewController" bundle:nil];
+        //将window的根控制器设置为。。。
+        self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:loginVC];
+    } else {
+        CourseViewController *courseVC = [[CourseViewController alloc] init];
+       
+        //将window的根控制器设置为。。。
+        self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:courseVC];
+    }
+    
+    
     [self.window makeKeyAndVisible];
     return YES;
 }
