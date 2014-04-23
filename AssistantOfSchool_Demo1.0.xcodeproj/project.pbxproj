@@ -12,7 +12,6 @@
 		0C0A0DD118FEA1D9001DBB8B /* MyDataPickerForMajorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0A0DCF18FEA1D9001DBB8B /* MyDataPickerForMajorViewController.m */; };
 		0C0A0DD218FEA1D9001DBB8B /* MyDataPickerForMajorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C0A0DD018FEA1D9001DBB8B /* MyDataPickerForMajorViewController.xib */; };
 		0C124B5018F291700021FC92 /* DetailCourseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C124B4E18F291700021FC92 /* DetailCourseViewController.m */; };
-		0C124B5118F291700021FC92 /* DetailCourseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C124B4F18F291700021FC92 /* DetailCourseViewController.xib */; };
 		0C124B5518F2AEC90021FC92 /* CourseDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C124B5418F2AEC90021FC92 /* CourseDao.m */; };
 		0C12770918F1400B005BE09A /* DatabseDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C12770818F1400B005BE09A /* DatabseDao.m */; };
 		0C1390B418F2F6A700685603 /* AddCourseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C1390B218F2F6A700685603 /* AddCourseViewController.m */; };
@@ -21,6 +20,10 @@
 		0C1390BA18F2FD7400685603 /* MyDataPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C1390B818F2FD7400685603 /* MyDataPicker.xib */; };
 		0C17B8CC18F42942004A4849 /* MyDataPickerForWeek.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C17B8CA18F42942004A4849 /* MyDataPickerForWeek.m */; };
 		0C17B8CD18F42942004A4849 /* MyDataPickerForWeek.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C17B8CB18F42942004A4849 /* MyDataPickerForWeek.xib */; };
+		0C1A12981907C2BE009DB052 /* SearchedLessonsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C1A12961907C2BE009DB052 /* SearchedLessonsViewController.m */; };
+		0C1A12991907C2BE009DB052 /* SearchedLessonsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C1A12971907C2BE009DB052 /* SearchedLessonsViewController.xib */; };
+		0C1BC19A19068D5700C9BCE8 /* DetailCourseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C1BC19919068D5700C9BCE8 /* DetailCourseViewController.xib */; };
+		0C36540E190690540011A43D /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C36540D190690540011A43D /* EventKit.framework */; };
 		0CE4F4B518FEBD1B00D5D413 /* WeekCountAndSemester.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CE4F4B318FEBD1B00D5D413 /* WeekCountAndSemester.m */; };
 		0CE4F4B618FEBD1B00D5D413 /* WeekCountAndSemester.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CE4F4B418FEBD1B00D5D413 /* WeekCountAndSemester.xib */; };
 		0CF502BD18EED6E100261E7C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF502BC18EED6E100261E7C /* Foundation.framework */; };
@@ -66,7 +69,6 @@
 		0C0A0DD018FEA1D9001DBB8B /* MyDataPickerForMajorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyDataPickerForMajorViewController.xib; sourceTree = "<group>"; };
 		0C124B4D18F291700021FC92 /* DetailCourseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailCourseViewController.h; sourceTree = "<group>"; };
 		0C124B4E18F291700021FC92 /* DetailCourseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailCourseViewController.m; sourceTree = "<group>"; };
-		0C124B4F18F291700021FC92 /* DetailCourseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailCourseViewController.xib; sourceTree = "<group>"; };
 		0C124B5318F2AEC90021FC92 /* CourseDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseDao.h; sourceTree = "<group>"; };
 		0C124B5418F2AEC90021FC92 /* CourseDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseDao.m; sourceTree = "<group>"; };
 		0C12770718F1400B005BE09A /* DatabseDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabseDao.h; sourceTree = "<group>"; };
@@ -80,6 +82,11 @@
 		0C17B8C918F42942004A4849 /* MyDataPickerForWeek.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyDataPickerForWeek.h; sourceTree = "<group>"; };
 		0C17B8CA18F42942004A4849 /* MyDataPickerForWeek.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyDataPickerForWeek.m; sourceTree = "<group>"; };
 		0C17B8CB18F42942004A4849 /* MyDataPickerForWeek.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyDataPickerForWeek.xib; sourceTree = "<group>"; };
+		0C1A12951907C2BE009DB052 /* SearchedLessonsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchedLessonsViewController.h; sourceTree = "<group>"; };
+		0C1A12961907C2BE009DB052 /* SearchedLessonsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchedLessonsViewController.m; sourceTree = "<group>"; };
+		0C1A12971907C2BE009DB052 /* SearchedLessonsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchedLessonsViewController.xib; sourceTree = "<group>"; };
+		0C1BC19919068D5700C9BCE8 /* DetailCourseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailCourseViewController.xib; sourceTree = "<group>"; };
+		0C36540D190690540011A43D /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		0CE4F4B218FEBD1B00D5D413 /* WeekCountAndSemester.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeekCountAndSemester.h; sourceTree = "<group>"; };
 		0CE4F4B318FEBD1B00D5D413 /* WeekCountAndSemester.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeekCountAndSemester.m; sourceTree = "<group>"; };
 		0CE4F4B418FEBD1B00D5D413 /* WeekCountAndSemester.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeekCountAndSemester.xib; sourceTree = "<group>"; };
@@ -122,6 +129,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C36540E190690540011A43D /* EventKit.framework in Frameworks */,
 				0CF5030518EF088200261E7C /* libsqlite3.0.dylib in Frameworks */,
 				0CF502BF18EED6E100261E7C /* CoreGraphics.framework in Frameworks */,
 				0CF502C118EED6E200261E7C /* UIKit.framework in Frameworks */,
@@ -145,9 +153,9 @@
 		0C124B4C18F290E80021FC92 /* DetailCourseViewController */ = {
 			isa = PBXGroup;
 			children = (
+				0C1BC19919068D5700C9BCE8 /* DetailCourseViewController.xib */,
 				0C124B4D18F291700021FC92 /* DetailCourseViewController.h */,
 				0C124B4E18F291700021FC92 /* DetailCourseViewController.m */,
-				0C124B4F18F291700021FC92 /* DetailCourseViewController.xib */,
 			);
 			name = DetailCourseViewController;
 			sourceTree = "<group>";
@@ -192,6 +200,16 @@
 			name = MyDataPickerViews;
 			sourceTree = "<group>";
 		};
+		0C1A12941907C252009DB052 /* Functiongs */ = {
+			isa = PBXGroup;
+			children = (
+				0C1A12951907C2BE009DB052 /* SearchedLessonsViewController.h */,
+				0C1A12961907C2BE009DB052 /* SearchedLessonsViewController.m */,
+				0C1A12971907C2BE009DB052 /* SearchedLessonsViewController.xib */,
+			);
+			name = Functiongs;
+			sourceTree = "<group>";
+		};
 		0CF502B018EED6E100261E7C = {
 			isa = PBXGroup;
 			children = (
@@ -214,6 +232,7 @@
 		0CF502BB18EED6E100261E7C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0C36540D190690540011A43D /* EventKit.framework */,
 				0CF502BC18EED6E100261E7C /* Foundation.framework */,
 				0CF502BE18EED6E100261E7C /* CoreGraphics.framework */,
 				0CF502C018EED6E100261E7C /* UIKit.framework */,
@@ -225,6 +244,7 @@
 		0CF502C218EED6E200261E7C /* AssistantOfSchool_Demo1.0 */ = {
 			isa = PBXGroup;
 			children = (
+				0C1A12941907C252009DB052 /* Functiongs */,
 				0C17B8C818F42909004A4849 /* MyDataPickerViews */,
 				0C124B5218F2AE940021FC92 /* EntityDao */,
 				0C124B4C18F290E80021FC92 /* DetailCourseViewController */,
@@ -387,10 +407,11 @@
 			files = (
 				0C0A0DD218FEA1D9001DBB8B /* MyDataPickerForMajorViewController.xib in Resources */,
 				0CF502F418EEDABD00261E7C /* SigninViewController.xib in Resources */,
+				0C1BC19A19068D5700C9BCE8 /* DetailCourseViewController.xib in Resources */,
 				0C0529C418F162A90065CB4F /* CourseViewController.xib in Resources */,
-				0C124B5118F291700021FC92 /* DetailCourseViewController.xib in Resources */,
 				0CF502C718EED6E200261E7C /* InfoPlist.strings in Resources */,
 				0CF502CF18EED6E200261E7C /* Images.xcassets in Resources */,
+				0C1A12991907C2BE009DB052 /* SearchedLessonsViewController.xib in Resources */,
 				0CF502EF18EED73800261E7C /* LoginViewController.xib in Resources */,
 				0CFFDEF91903980D00EDCD27 /* MyDatePicker.xib in Resources */,
 				0CE4F4B618FEBD1B00D5D413 /* WeekCountAndSemester.xib in Resources */,
@@ -422,6 +443,7 @@
 				0CFFDEF81903980D00EDCD27 /* MyDatePicker.m in Sources */,
 				0CF502FF18EEE68F00261E7C /* StuCourInfo.m in Sources */,
 				0C0A0DD118FEA1D9001DBB8B /* MyDataPickerForMajorViewController.m in Sources */,
+				0C1A12981907C2BE009DB052 /* SearchedLessonsViewController.m in Sources */,
 				0C0529C318F162A90065CB4F /* CourseViewController.m in Sources */,
 				0CF502CD18EED6E200261E7C /* AOSAppDelegate.m in Sources */,
 				0CF502C918EED6E200261E7C /* main.m in Sources */,

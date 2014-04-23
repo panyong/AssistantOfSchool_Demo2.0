@@ -9,13 +9,20 @@
 #import <UIKit/UIKit.h>
 #import "DatabseDao.h"
 #import "CourseViewController.h"
+#import <EventKit/EventKit.h>
 @interface DetailCourseViewController : UIViewController<UITextFieldDelegate>
+
+@property EKEventStore *store;
 
 @property (weak, nonatomic) IBOutlet UITextField *courseName;
 @property (weak, nonatomic) IBOutlet UITextField *teacherName;
 @property (weak, nonatomic) IBOutlet UITextField *classroom;
 @property (weak, nonatomic) IBOutlet UITextField *weekBenginAndEnd;
 @property (weak, nonatomic) IBOutlet UITextField *lessonBeginAndEnd;
+@property (weak, nonatomic) IBOutlet UIButton *addEventBtn;
+@property (weak, nonatomic) IBOutlet UITextField *homework;
+- (IBAction)addEvent:(id)sender;
+
 
 -(void)acceptCourseVC:(CourseViewController*)tempVC;
 - (IBAction)goBack:(id)sender;

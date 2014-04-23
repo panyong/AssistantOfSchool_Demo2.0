@@ -11,6 +11,8 @@
 #import "DatabseDao.h"
 #import "DetailCourseViewController.h"
 #import "StudentInfo.h"
+#import "SearchedLessonsViewController.h"
+
 @interface CourseViewController ()<UIScrollViewDelegate>
 
 @end
@@ -19,7 +21,9 @@
 
 {
     UILabel *labelOfWeek[7];  //周一到周日的标签
+    
     UILabel *labelOfLesson[12]; //1--12节课的标签
+    
     UILabel *labelOfMon;  //表示当前月份的标签
     
     UILabel *labelOfCourse[12][7];  //总计84节课的按钮
@@ -34,10 +38,13 @@
     //数据库操作
     DatabseDao *courseDB;
     
+    //当前月份
     int mon;
     
+    //当前是单周？
     NSInteger state;
     
+    //用户的实例
     StudentInfo *userInfo;
     
 }
@@ -56,6 +63,15 @@
 {
     [super viewDidLoad];
     
+    //添加左侧按钮
+    [self.navigationItem setLeftBarButtonItem:[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(signMe:)] animated:YES];
+    
+    //右侧按钮栏
+    NSArray *leftBtns = [NSArray arrayWithObjects:[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(settings:)], nil];
+    
+    //添加右侧按钮
+    [self.navigationItem setRightBarButtonItems:leftBtns];
+    
     widthOfCourse = (self.view.frame.size.width - 20) / 7;//课号栏宽20
     
     heigthOfCourse = (self.view.frame.size.height - 20  -30) / 8.75;//状态栏20，导航栏50，周几栏高30
@@ -63,6 +79,8 @@
     courseDB = [[DatabseDao alloc] init];
     
     [courseDB openDatabse];
+    
+    //[courseDB deleteCourseByNo:4];
     
     [self initStudentInfo];
     
@@ -74,22 +92,17 @@
     }else
         state = 1;//双周
     
-    
-    
-    //UIImage *bg35 = [UIImage imageNamed:@"background35.jpg"];
-    //UIImage *bg40 = [UIImage imageNamed:@"bg40.jpg"];
-    
+    //设置视图的边界
     [self.view setBounds:[[UIScreen mainScreen] bounds]];
     
+    //实例化滚动视图ß
     scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 30, self.view.frame.size.width, self.view.frame.size.height)];//状态栏20，导航栏50，周几栏高30
     
     scrollView.delegate = self;//设置滚动视图的委托对象
     
-    //self.view.backgroundColor = [UIColor colorWithPatternImage:bg40];
-    
     [scrollView setShowsVerticalScrollIndicator:NO];//禁止显示滚动条
     
-    [scrollView setBounces:NO];
+    [scrollView setBounces:NO];  //禁止滚动时反弹
     
     [self.view addSubview:scrollView];
     
@@ -106,14 +119,79 @@
     
     mon = [dateComponent month];
     
+    //设置时间循环监听
+    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:5 target:self selector:@selector(updateWeek:) userInfo:nil repeats:YES];
+    
+    [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSDefaultRunLoopMode];
+    
     [self initView];
     
     [self updateCourseView];
+
+}
+
+
+#pragma mark - Shake
+
+- (BOOL) canBecomeFirstResponder
+
+{
     
+    return YES;
     
-    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:100 target:self selector:@selector(updateWeek:) userInfo:nil repeats:YES];
+}
+
+- (void) viewDidAppear:(BOOL)animated
+
+{
     
-    [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSDefaultRunLoopMode];
+    [super viewDidAppear:animated];
+    
+    [self becomeFirstResponder];
+    
+}
+
+- (void) viewWillAppear:(BOOL)animated
+
+{
+    
+    [self resignFirstResponder];
+    
+    [super viewWillAppear:animated];
+    
+}
+
+- (void) motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event
+
+{
+    
+    if (motion == UIEventSubtypeMotionShake) {
+        
+        [self searchLesson:nil];
+    }
+    
+}
+
+//蹭课
+-(void)searchLesson:(id)sender{
+    NSLog(@"蹭课");
+    
+    SearchedLessonsViewController *searchedLessonVC = [[SearchedLessonsViewController alloc] initWithNibName:@"SearchedLessonsViewController" bundle:nil];
+    
+    [searchedLessonVC acceptDatabase:courseDB andState:state];
+    
+    [self.navigationController pushViewController:searchedLessonVC animated:YES];
+    
+}
+
+//签到
+-(void)signMe:(id)sender{
+    NSLog(@"签到");
+}
+
+//设置
+-(void)settings:(id)sender{
+    NSLog(@"设置");
 }
 
 -(void)initStudentInfo{
@@ -130,7 +208,7 @@
     
     NSDateComponents *dateComponent = [calendar components:unitFlags fromDate:now];
     
-    mon = [dateComponent month];
+    mon = [dateComponent month];//更新月份
     
     NSDateFormatter *formatter=[[NSDateFormatter alloc] init];
     
@@ -140,13 +218,13 @@
     
     NSTimeInterval timeInterval = -[dateOfBegin timeIntervalSinceNow];
     
-    NSInteger intervalOfWeek = timeInterval/60/60/24/7;
+    NSInteger intervalOfWeek = 1+(timeInterval/60/60/24/7);
 
     //更新当前周
     if (userInfo.weekCount != intervalOfWeek) {
         [courseDB updateUserInfo:intervalOfWeek];
         
-        if (userInfo.weekCount%2 != 0) {
+        if (intervalOfWeek%2 != 0) {
             state = 0;  //单周
             
         }else
@@ -159,11 +237,11 @@
         [self updateCourseView];
     }
     
-   /* NSLog(@"开学时间%@",userInfo.timeOfBegin);
+   //NSLog(@"开学时间%@",userInfo.timeOfBegin);
     
-    NSLog(@"时差%f秒",timeInterval);
+   // NSLog(@"时差%f秒",timeInterval);
     
-    NSLog(@"时差%d周",intervalOfWeek);*/
+    //NSLog(@"时差%d周",intervalOfWeek);
 }
 
 - (void)didReceiveMemoryWarningv

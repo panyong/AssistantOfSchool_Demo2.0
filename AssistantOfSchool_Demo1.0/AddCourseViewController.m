@@ -96,16 +96,24 @@
 }
 
 
-//判断现有课程是否与添加的课程冲突
+//判断现有课程是否与添加的课程冲突   14.4.23修复BUG
 -(BOOL)hasTheSameCourse:(CourseInfo*)course{
     NSMutableArray *courses = [database queryAllCourse];
     
-    for (int i = 0; i < courses.count; i++) {
-        CourseInfo *temp = [courses objectAtIndex:i];
-        if ( (course.dayOfWeek == temp.dayOfWeek) && (course.state == temp.state) && (course.lessonEnd - course.lessonBegin) <= (temp.lessonEnd - temp.lessonBegin) ) {
-            return YES;
-            break;
+    for (CourseInfo *tempCourse in courses) {
+        
+        if (tempCourse.state != 2) {
+            if ( (course.dayOfWeek == tempCourse.dayOfWeek) && (course.state == tempCourse.state) && ( (course.lessonBegin >= tempCourse.lessonBegin && course.lessonBegin <= tempCourse.lessonEnd) || (course.lessonEnd >= tempCourse.lessonBegin && course.lessonEnd <= tempCourse.lessonEnd) ) ) {
+                return YES;
+                break;
+            }
+        } else {
+            if ( (course.dayOfWeek == tempCourse.dayOfWeek) && ( (course.lessonBegin >= tempCourse.lessonBegin && course.lessonBegin <= tempCourse.lessonEnd) || (course.lessonEnd >= tempCourse.lessonBegin && course.lessonEnd <= tempCourse.lessonEnd))) {
+                return YES;
+                break;
+            }
         }
+       
     }
     
     return NO;
